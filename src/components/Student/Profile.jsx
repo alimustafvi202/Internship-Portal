@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Profile.css';
-import Profile from "../assets/profile.jpeg";
+import Profile from "../../assets/profile.jpeg";
+import Header from './Header';
 const ProfileCard = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({
@@ -32,6 +33,9 @@ const ProfileCard = () => {
   };
 
   return (
+    <div>
+      <Header/>
+    
     <div className="profile-container">
       <h1>
         My Profile
@@ -171,6 +175,7 @@ const ProfileCard = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

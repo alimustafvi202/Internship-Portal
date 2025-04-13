@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Tasks.css'; // Import your CSS file here
-
+import Header from './Header';
 const initialTasks = [
   {
     id: 1,
@@ -81,6 +81,8 @@ const MyTaskPage = () => {
   };
 
   return (
+    <div>
+      <Header/>
     <div className="main-content">
       <div className="header">
         <h1>My Tasks</h1>
@@ -178,6 +180,7 @@ const MyTaskPage = () => {
           </table>
         </div>
       ))}
+    </div>
     </div>
   );
 };

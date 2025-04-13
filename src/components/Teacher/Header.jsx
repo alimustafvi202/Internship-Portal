@@ -1,6 +1,6 @@
 import "./Header.css";
-import logo from "../assets/logo new.png";
-import Profile from "../assets/profile.jpeg";
+import logo from "../../assets/logo new.png";
+import Profile from "../../assets/profile.jpeg";
 import {
   MdDashboard, MdPerson, MdAssignment,
   MdGroup, MdChat, MdSettings, MdLogout,
@@ -34,9 +34,9 @@ function Header() {
         <img src={logo} alt="Technik Nest Logo" />
         <a href="/"><MdDashboard className="icon" /> Dashboard</a>
         <a href="/profile"><MdPerson className="icon" /> Profile</a>
-        <a href="/tasks"><MdAssignment className="icon" /> My Task</a>
-        <a href="#"><MdGroup className="icon" /> Team</a>
-        <a href="/chating"><MdChat className="icon" /> Chat</a>
+        <a href="/assigntasks"><MdAssignment className="icon" /> Assign Task</a>
+        <a href="/students"><MdGroup className="icon" /> Students</a>
+        <a href="/chat"><MdChat className="icon" /> Chat</a>
         <a href="#"><MdSettings className="icon" /> Setting</a>
         <a href="#"><MdLogout className="icon" /> Logout</a>
       </aside>

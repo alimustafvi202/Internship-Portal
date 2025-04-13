@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Dashboard.css";
-
+import Header from './Header';
 const dashboardItems = [
     { icon: "👥", label: "My Profile", link: "/profile" },
     { icon: "📚", label: "My Tasks", link: "/tasks", completed: true },
@@ -20,6 +20,9 @@ const dashboardItems = [
 
 export default function Dashboard() {
   return (
+    <div>
+      <Header/>
+    
     <div className="main-content">
       <div className="dashboard-container">
         <div className="dashboard-header">
@@ -42,6 +45,7 @@ export default function Dashboard() {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 }

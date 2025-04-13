@@ -1,6 +1,6 @@
 import React from 'react';
 import './PendingTasks.css'; // Importing the custom CSS file
-
+import Header from './Header';
 const PendingTasks = () => {
   // Sample tasks data for frontend display
   const tasks = [
@@ -25,6 +25,8 @@ const PendingTasks = () => {
   ];
 
   return (
+    <div>
+      <Header/>
     <div className="app-container">
       
 
@@ -53,6 +55,7 @@ const PendingTasks = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

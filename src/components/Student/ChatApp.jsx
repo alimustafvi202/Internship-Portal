@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ChatApp.css";
 import { FaSearch, FaPhoneAlt, FaVideo, FaPaperPlane } from "react-icons/fa";
-
+import Header from './Header';
 const messages = [
   { name: "Albert Flores", time: "10:37", text: "Hi, I'm confirming your check-in..." },
   { name: "Annette Black", time: "9:15", text: "I'm arriving tomorrow afternoon...", unread: true },
@@ -50,7 +50,7 @@ const ChatInterface = () => {
 
   return (
     <div className="chat-wrapper">
-      {/* Sidebar */}
+      <Header/>
       <div className="chatsidebar">
         <div className="chatsidebar-header">
           <h2>Messages</h2>
